@@ -7,11 +7,9 @@ class NegativeNumberException implements Exception {
   String toString() => message;
 }
 
-class NumberParseException implements Exception {
-  final String message;
-
-  NumberParseException(this.message);
+class NumberParseException extends FormatException {
+  NumberParseException([super.message = 'Invalid format']);
 
   @override
-  String toString() => message;
+  String toString() => 'Formate Exception: $message';
 }

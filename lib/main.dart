@@ -20,7 +20,7 @@ void main() {
   print("Case 3 Output : $case3");
 
   /// Case 4: Support different delimiters: [e.g- //,\n,;]
-  // Input: "1\n2,3"
+  // Input: "//;\n1;23"
   // Output: 3
   final case4 = StringCalculator.add("//;\n1;2");
   print("Case 4 Output : $case4");
